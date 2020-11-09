@@ -1,0 +1,32 @@
+{
+  "name": "jest-screenshot-testing-example",
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "jest-image-snapshot": "latest",
+    "puppeteer": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-screenshot-test": "latest",
+    "react-scripts": "latest",
+    "serve": "latest",
+    "start-server-and-test": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "serve": "serve -s build",
+    "test": "react-scripts test",
+    "test:jest-image-snapshot": "npm run build && start-server-and-test serve http://localhost:5000 test",
+    "test:react-screenshot-test": "SCREENSHOT_MODE=local jest -c jest.screenshot.config.js"
+  },
+  "browserslist": {
+    "production": [
+      "last 1 chrome version"
+    ],
+    "development": [
+      "last 1 chrome version"
+    ]
+  }
+}
