@@ -4,8 +4,8 @@
     "node": ">=12"
   },
   "dependencies": {
-    "jest-image-snapshot": "latest",
-    "puppeteer": "latest",
+    "jest-image-snapshot": "^4.5.0",
+    "puppeteer": "^10.0.0",
     "react": "latest",
     "react-dom": "latest",
     "react-screenshot-test": "latest",
